@@ -380,7 +380,7 @@ img.man-icons {
   width: calc(100% - 2rem);
   margin: auto;
 }
-.project-card {
+.project-card , .project-img {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
@@ -405,13 +405,13 @@ img.man-icons {
   margin-bottom: var(--mb-4);
   padding-bottom: 3.5rem;
 }
-.small-btn {
+.project-deployed-link , .project-github-link {
   padding: 0.3rem 1.3rem;
   font-weight: 400;
   margin: 1rem;
 }
 .project-btns {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
 }
 
