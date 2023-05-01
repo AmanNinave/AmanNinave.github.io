@@ -20,7 +20,7 @@
   <body>
     <!--===== HEADER =====-->
     <header class="l-header">
-      <nav class="nav bd-grid">
+      <nav id="nav-menu" class="nav bd-grid">
         <div>
           <a href="#home" class="nav-logo"
             ><img 
@@ -66,7 +66,7 @@
       <!--===== HOME =====-->
       <section class="home bd-grid section" id="home">
         <div class="home-data">
-          <h2 class="home-title">
+          <h2 id="user-detail-name" class="home-title">
             Hi 👋,<br />I'am <span class="home-title-color">Aman</span><br />
             Full-Stack Developer
           </h2>
@@ -102,9 +102,10 @@
 
         <div id = "profile" style="border: 2 px solid rgb(128, 94, 0)">
           <img
-            class="portfolioImg"
+            class="home-img"
+            
             src="assets/img/photo.jpg"
-            alt="Priya Profile"
+            alt="Aman's Profile"
           />
         </div>
 
@@ -120,8 +121,8 @@
           </div> -->
 
           <div style="text-align: center">
-            <h2 class="about-subtitle">I'am Aman Ninave</h2>
-            <p class="about-text">
+            <h2 id="user-detail-name" class="about-subtitle">I'am Aman Ninave</h2>
+            <p id="user-detail-intro" class="about-text">
               Data structures and algorithms enthusiast, Quick learner and an
               aspiring full-stack web developer with core knowledge of MERN
               stack technology. Looking forward for applying and enhancing my
@@ -265,88 +266,91 @@
         <h2 class="section-title">Projects</h2>
 
         <div class="project-container">
-          <div class="project-img">
+          <div   class="project-card">
             <img src="assets/img/spotify.png" alt="spotify.co.in"/>
             <p class="project-title">Spotify clone</p>
             <p class="project-subtitle">
-                Spotify is a digital music, podcast, and video streaming platform that gives you access to millions of songs and other content from creators all over the world.<br />
+              <span  class="project-description"> Spotify is a digital music, podcast, and video streaming platform that gives you access to millions of songs and other content from creators all over the world. </span>
+                <br />
               <br />
               A collaborative project, built in 5 days by a team of 5
               developers.
               <br />
-              <br />HTML | CSS | Javascript
+              <br /><span class="project-tech-stack"> HTML | CSS | JavaScript  </span>
             </p>
             <div class="project-btns">
               <a
                 href="https://github.com/ritikraj07/Project_Spotify.com"
                 target="_blank"
-                class="small-btn button"
+                class="project-github-link"
               >
                 Code<i class="bx bxl-github"></i>
               </a>
               <a
                 href="https://starlit-salmiakki-6e2eb0.netlify.app/html/"
                 target="_blank"
-                class="small-btn button"
+                class="project-deployed-link"
               >
                 Live<i class="bx bx-link-external"></i>
               </a>
             </div>
           </div>
 
-          <div class="project-img">
+          <div class="project-card">
             <img src="assets/img/ikea.png" alt="ikea.com" />
             <p class="project-title">IKEA clone</p>
             <p class="project-subtitle">
-                IKEA, home furnishings retailer which sells ready-to-assemble furniture & home accessories, IKEA specializes in low-priced goods, sold whenever possible in compact “flat-pack” form for in-home assembly by the customer. 
-              <br />
+              <span  class="project-description">  IKEA, home furnishings retailer which sells ready-to-assemble furniture & home accessories, IKEA specializes in low-priced goods, sold whenever possible in compact “flat-pack” form for in-home assembly by the customer. </span>
+                
+                <br />
               <br />
               A collaborative project built by a team of 3, executed in 5 days.
               <br />
               <br />
-              HTML | CSS | React | Redux 
+              <span class="project-tech-stack">React | Redux | CSS | JavaScript  </span>
             </p>
             <div class="project-btns">
               <a
                 href="https://github.com/AmanNinave/IKEA/tree/main/ikea-clone"
                 target="_blank"
-                class="small-btn button"
+                class="project-github-link"
               >
                 Code<i class="bx bxl-github"></i>
               </a>
               <a
                 href="https://ikea-clone-ruddy.vercel.app"
                 target="_blank"
-                class="small-btn button"
+                class="project-deployed-link"
               >
                 Live<i class="bx bx-link-external"></i>
               </a>
             </div>
           </div>
 
-          <div class="project-img">
+          <div class="project-card">
             <img src="assets/img/skinstore.png" alt="walmart.com" />
             <p class="project-title">Skinstore Clone</p>
             <p class="project-subtitle">
-                SkinStore is an online marketplace that offers a vast catalog of beauty products comprising skincare, haircare, self-care, makeup, and body categories.
+               <span  class="project-description"> SkinStore is an online marketplace that offers a vast catalog of beauty products comprising skincare, haircare, self-care, makeup, and body categories.</span>
               <br />
               <br />
               A collaborative project built by a team of 4, executed in 5 days.
               <br />
-              <br /> HTML | CSS | JavaScript  
+              <br /> <span class="project-tech-stack"> HTML | CSS | JavaScript  </span>
             </p>
             <div class="project-btns">
               <a
                 href="https://github.com/AmanNinave/Skin_Store_Clone"
                 target="_blank"
-                class="small-btn button"
+                
+                class="project-github-link"
               >
                 Code<i class="bx bxl-github"></i>
               </a>
               <a
                 href="https://idyllic-biscuit-d36106.netlify.app/an-skinstore/homepage/"
                 target="_blank"
-                class="small-btn button"
+                class="project-deployed-link"
               >
                 Live<i class="bx bx-link-external"></i>
               </a>
@@ -369,6 +373,7 @@
           href="https://www.linkedin.com/in/aman-ninave-61890a1aa/"
           target="_blank"
           class="footer-icon"
+          id="contact-linkedin"
           ><i class="bx bxl-linkedin">
             <br />
             LinkedIn</i
@@ -379,6 +384,7 @@
           href="https://github.com/AmanNinave"
           target="_blank"
           class="footer-icon"
+          id="contact-github"
           ><i class="bx bxl-github">
             <br />
             Github</i
@@ -388,12 +394,16 @@
           href="mailto:amanninave987@gmail.com"
           target="_blank"
           class="footer-icon"
+          id="contact-email"
           ><i class="bx bx-mail-send">
             <br />
             E-mail</i
           ></a
         >
-        <a href="tel:+918623009913" target="_blank" class="footer-icon"
+        <a href="tel:+918623009913" 
+            target="_blank" 
+            class="footer-icon"
+            id="contact-phone"
           ><i class="bx bx-phone">
             <br />
             Phone</i

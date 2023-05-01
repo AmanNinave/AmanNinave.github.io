@@ -380,17 +380,17 @@ img.man-icons {
   width: calc(100% - 2rem);
   margin: auto;
 }
-.project-img {
+.project-card {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
 }
-.project-img img {
+.project-card img {
   transition: 1s;
   cursor: pointer;
   margin-bottom: 0.5rem;
 }
-.project-img img:hover {
+.project-card img:hover {
   transform: scale(1.1);
 }
 .project-container p {
