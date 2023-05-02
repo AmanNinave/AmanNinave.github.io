@@ -547,6 +547,20 @@ img.man-icons {
  
 }
 
+.stats-Div {
+  display: flex;
+  text-align: center;
+  margin: 0px 5% ;
+  gap: 10px;
+  /* background-color: blue; */
+  justify-content: space-evenly;
+  padding: 0px 20px 50px 20px;
+}
+
+/* .stats-Div > div:first-child , div:last-child {
+  
+} */
+
 @media screen and (min-width: 1024px) {
   .bd-grid {
     margin-left: auto;
